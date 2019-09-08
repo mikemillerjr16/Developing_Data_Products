@@ -1,0 +1,37 @@
+---
+title: "Leaflet Map"
+date: "`r format(Sys.Date(), '%B %d, %Y')`"
+output: html_document
+keep md: yes
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Leaflet Map
+
+Creating a Map that illustrates the Eiffel Tour
+
+```{r}
+library(leaflet)
+```
+
+
+```{r}
+my_map <- leaflet() %>%
+addTiles()
+my_map
+
+```
+
+
+```{r}
+EiffelTour <- c("<a href= 'http://www.toureiffel.paris' >Eiffel Tour</a>")
+leaflet() %>%
+addTiles() %>%
+addMarkers(lat=48.858053, lng=2.294289, popup = EiffelTour)
+
+```
+
