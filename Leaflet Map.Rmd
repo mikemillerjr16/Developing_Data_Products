@@ -1,9 +1,9 @@
 ---
 title: "Leaflet Map"
 date: "`r format(Sys.Date(), '%B %d, %Y')`"
-output: html_document
-keep md: yes
-
+output: 
+    html_document:
+        keep_md: yes
 ---
 
 ```{r setup, include=FALSE}
