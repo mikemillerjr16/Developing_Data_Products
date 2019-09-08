@@ -19,7 +19,7 @@ library(leaflet)
 ```
 
 
-```{r}
+```{r, eval=FALSE}
 my_map <- leaflet() %>%
 addTiles()
 my_map
